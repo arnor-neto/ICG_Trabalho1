@@ -124,6 +124,49 @@ void drawTriangle(struct pixel P1, struct pixel P2, struct pixel P3)
     
 </p></details>
 
+### Interpolação de cores
+
+Para a interpolação linear das cores na reta, a lógica usada foi: 
+
+1. Obter a diferença entre as cores dos dois pontos que delimitam a reta;
+2. Dividir esse valor pelo número de pixels usados para desenhar a reta e assim obter a taxa de variação de cor entre os pontos ;
+3. E, por último, efetuar gradativamente o aumento/decremento dos níveis de intensidade da cor de cada pixel desenhado ao longo da reta.
+
+```
+if (abs(dx) >= abs(dy))
+    {
+        changeR = (float)(P2.R - P1.R) / abs(dx);
+        changeG = (float)(P2.G - P1.G) / abs(dx);
+        changeB = (float)(P2.B - P1.B) / abs(dx);
+        changeA = (float)(P2.A - P1.A) / abs(dx);
+    }
+    else
+    {
+        changeR = (float)(P2.R - P1.R) / abs(dy);
+        changeG = (float)(P2.G - P1.G) / abs(dy);
+        changeB = (float)(P2.B - P1.B) / abs(dy);
+        changeA = (float)(P2.A - P1.A) / abs(dy);
+    }
+    
+     ...
+    
+while (P1.X != P2.X || P1.Y != P2.Y){
+    
+     ...
+     
+      //Interpolação de cores
+        red += changeR;
+        green += changeG;
+        blue += changeB;
+        alpha += changeA;
+           P1.R = red;
+           P1.G = green;
+           P1.B = blue;
+           P1.A = alpha;
+
+           putPixel(P1);
+       }
+ ```
 ## Resultados e dificuldades encontradas
 O trabalho conseguiu executar tudo o que foi pedido, com resultados muito satisfatórios. 
 A maior dificuldade foi a difusão do algoritmo de Bresenham para todos os octantes, tarefa principal durante o desenvolvimento.
