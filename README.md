@@ -10,7 +10,7 @@ Durante esse processo, acontece a escolha dos pixels que serão “pintados” n
 
 Para a representação gráfica são usados os pixels, que são os menores elementos de uma imagem. Cada pixel possui três bytes que contém valores para as cores: vermelho, verde e azul (RGB, do inglês red green and blue).
 
-Imagem de cores.
+![pixel-e-sistema-rgb-02](https://user-images.githubusercontent.com/42072854/43997586-05d8bf10-9db6-11e8-98ea-29e83bdc5536.png)
 
 Com essas três cores primárias, podemos formar exatas 16.777.216, simplesmente mudando a intensidade de cada uma numa variação de 0 à 255, para cada cor. Algumas representações utilizam mais do que essas três cores, como o sistema RGBA que usam o “Alpha” para adicionar transparência à imagem.
 ## Funções implementadas:
