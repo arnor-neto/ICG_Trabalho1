@@ -69,6 +69,8 @@ drawLine(struct pixel P1, struct pixel P2) {
 ```
 Tendo o vista a limitação desse algoritmo, fez-se necessário descobrir, matematicamente, como utilizá-lo para os outros 7 octantes, usando troca de coordenadas e adaptando as operações efetuadas. Um dos pontos essenciais para efetuar a adaptação foi analisar os valores de variação de distância nos dois eixos da representação (X e Y), comparando tais valores e alterando-os quando necessário.
 
+![octantesreal](https://user-images.githubusercontent.com/42072854/44034421-70416a68-9ee3-11e8-9c48-87ef83776796.gif)
+
 Para fazer as alterações, é muito importante a percepção de em qual octante está localizada a linha proposta. Usamos uma função recursiva, que inverte a ordem dos pontos quando a linha pertence inicialmente ao lado esquerdo dos octantes, para que assim a linha esteja sempre do lado direito (entre os quadrantes 1, 2, 7 e 8).
 Desta forma, a próxima preocupação é com os sinais e com os elementos usados para formar a variável de decisão, além dos incrementos leste e nordeste.
 
