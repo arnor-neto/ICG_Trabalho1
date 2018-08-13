@@ -173,3 +173,8 @@ A maior dificuldade foi a difusão do algoritmo de Bresenham para todos os octan
 
 ## Referências
 
+http://www.demic.fee.unicamp.br/~jeff/ArquivosIndex/Bresenham
+
+https://slideplayer.com.br/slide/366939/https://slideplayer.com.br/slide/366939/
+
+http://disciplinas.ist.utl.pt/leic-cg/textos/livro/Rasterizacao.pdf
