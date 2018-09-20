@@ -188,3 +188,7 @@ http://www.demic.fee.unicamp.br/~jeff/ArquivosIndex/Bresenham
 https://slideplayer.com.br/slide/366939/https://slideplayer.com.br/slide/366939/
 
 http://disciplinas.ist.utl.pt/leic-cg/textos/livro/Rasterizacao.pdf
+
+# Trabalho 2
+
+Repositório do trabalho 2: https://github.com/arnor-neto/ICG_Trabalho2
